@@ -1,0 +1,77 @@
+/*  WRAPPER  */
+
+.wrapper{
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*  CLEARS  */
+
+.wrapper:after, #tour-form:after, #form:after, #property-features:after, #floorplan-wrapper:after{
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height:0;
+}
+
+/* HEADER */
+
+header {
+    background-color: #fff;
+    text-align: center;
+    padding: 1em .5em;
+}
+
+#logo-header {
+    width: 80%;
+    margin-bottom: 1em;
+}
+
+header article span {
+    color: #231f20;
+    font-family: $font-bold, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+header article span a,
+header article span a:hover,
+header article span a:visited {
+    color: $color-green;
+    font-family: $font-bold, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 500px){
+    header article span {
+        font-size: 1.25em;
+    }
+
+    header article span a,
+    header article span a:hover,
+    header article span a:visited {
+        font-size: 1.8em;
+    }
+
+    #header-ph, #footer-ph, .tel-link{
+        cursor: auto;
+    }
+}
+
+@media screen and (min-width: 750px){
+    #logo-header {
+        float: left;
+        width: 390px;
+    }
+
+    header article {
+        float:right;
+        margin-top: 1.25em;
+        text-align: right;
+    }
+}
+

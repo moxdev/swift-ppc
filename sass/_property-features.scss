@@ -1,0 +1,270 @@
+
+#property-features {
+    background: #D5CBB0;
+    line-height: 0;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 14px;
+}
+
+#property-features h2 {
+    color: #fff;
+    background: #68000b;
+    padding: 1.75em 0px;
+    margin-bottom: 0;
+}
+
+#property-features .fancy span:before,
+#property-features .fancy span:after {
+    border-top: 1px solid #fff;
+}
+
+#community-features {
+    padding: 1em 1em 0;
+    color: #231f20;
+    line-height: 1.3;
+}
+
+#community-features > h3 {
+    color: #231f20;
+}
+
+#community-features > ul{
+    color: #231f20;
+    margin-left: 1em;
+    margin-bottom: 2em;
+}
+
+#community-features > ul li{
+    font-family: "caudexregular", Times, serif;
+    list-style: outside disc;
+
+}
+
+#photo-grid {
+    text-align: center;
+    background: #fff;
+}
+
+#photo-grid li {
+    margin: .3em 0;
+}
+
+#photo-grid li:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and ( min-width: 1000px ){
+    #community-features{
+        float:left;
+        width: 45%;
+        font-size: 1.1em;
+    }
+
+    #photo-grid{
+        float: right;
+        width: 52.5%;
+        text-align: left;
+    }
+
+    #photo-grid li:nth-child(2n+1) {
+        clear: left;
+        margin-left: 0;
+    }
+
+    #photo-grid li {
+        float: left;
+        margin: 0 0.3em .3em;
+        width: 49.5%;
+    }
+
+    #photo-grid li:nth-child(5),
+    #photo-grid li:nth-child(6) {
+        margin-bottom: 0;
+    }
+
+    #photo-grid li:nth-child(2n){
+        margin: 0;
+    }
+}
+
+@media screen and ( min-width: 1117px ){
+    #photo-grid li {
+        width: 49.62%;
+    }
+}
+
+@media screen and ( min-width: 1174px ){
+    #photo-grid li {
+        width: 49.64%;
+    }
+}
+
+@media screen and ( min-width: 1241px ){
+    #photo-grid li {
+        width: 49.66%;
+    }
+}
+
+@media screen and ( min-width: 1313px ){
+    #photo-grid li {
+        width: 49.69%;
+    }
+}
+
+@media screen and ( min-width: 1350px ){
+    #photo-grid{
+        width: 51.5%;
+    }
+
+    #community-features > h3{
+        font-size: 1.6em;
+    }
+}
+
+
+@media screen and (min-width: 1400px){
+    #community-features li{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1468px){
+    #photo-grid li {
+        width: 49.72%;
+    }
+}
+
+@media screen and (min-width: 1630px){
+    #photo-grid li {
+        width: 49.74%;
+    }
+}
+
+@media screen and (min-width: 1750px){
+    #community-features li{
+        font-size: 1.3em;
+    }
+}
+
+
+@media screen and (min-width: 1819px){
+    #photo-grid li {
+        width: 49.77%;
+    }
+}
+
+@media screen and (min-width: 1977px){
+    #photo-grid li {
+        width: 49.79%;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    #community-features li{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 2168px){
+    #photo-grid li {
+        width: 49.81%;
+    }
+}
+
+@media screen and (min-width: 2397px){
+    #photo-grid li {
+        width: 49.82%;
+    }
+}
+
+
+.floorplan {
+    margin-bottom: 2em;
+}
+
+.floorplan-details {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.floorplan span {
+    display: block;
+    font-family: "caudexregular", Times, serif;
+    font-size: 1.1em;
+    margin: 0 0 1em 0;
+}
+
+.floorplan .floorplan-details h4{
+    font-family: "caudexregular", Times, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #68000B;
+}
+
+@media screen and (min-width: 650px){
+    .floorplan:nth-child(2n+1) {
+        clear: left;
+    }
+    .floorplan {
+        float: left;
+        width: 48%;
+        padding-right: 2em;
+        text-align: center;
+    }
+
+    .floorplan > #tier1 {
+        width: 70%;
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+    .floorplan:nth-child(2n+1) {
+        clear: none;
+    }
+
+    /*.floorplan:nth-child(4n+1) {
+        clear: left;
+    }
+    */
+    .floorplan {
+        width: 20%;
+    }
+}
+
+#sub-content{
+    background-color: #fff;
+    color: #231f20;
+}
+
+#sub-content > p {
+    font-family: "caudexregular", Times, serif;
+}
+
+#sub-content > h3 {
+    color: #231f20;
+}
+
+#pre-footer .wrapper {
+    background: #FFFFFF;
+}
+
+#map-canvas {
+    height: 300px;
+    position: relative;
+}
+
+
+@media screen and (min-width: 900px){
+    #pre-footer #sub-content {
+        padding-left: 3em;
+        padding-bottom: 3em;
+    }
+}
+
+@media screen and (min-width: 2336px){
+    #pre-footer #sub-content {
+        padding-bottom: 4.35em;
+        padding-top: 2em;
+    }
+}

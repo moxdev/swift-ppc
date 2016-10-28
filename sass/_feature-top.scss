@@ -1,0 +1,99 @@
+// feature-top
+#feature-top {
+    background: $feature-top-background-color;
+}
+
+#feature-top article p, #feature-top article ul {
+    color: $feature-top-color;
+    font-family: $font-regular, Times, serif;
+}
+
+#feature-top article ul {
+    margin-left: 2.5em;
+    margin-bottom: 1em;
+}
+
+#feature-top article ul > li{
+    list-style: outside disc;
+    font-size: 1em;
+    line-height: 1.25em;
+}
+
+#feature-top article {
+    padding: 1.5em 1em 1.5em .5em;
+}
+
+#feature-top article img {
+    height: 60px;
+    margin: 10px 10px 0 0;
+}
+
+.feature-image-container img {
+    max-width: none;
+}
+
+.feature-image-container {
+    height: 350px;
+}
+
+#feature-top .logo-wrapper {
+    text-align: center;
+}
+
+@media screen and (min-width: 1000px){
+    .feature-image-container {
+        width: 48.5%;
+        float: left;
+        height: 693px;
+    }
+
+    #feature-top article {
+        float: right;
+        width: 51.5%;
+        padding-left: 3em;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    header article span {
+        font-size: 1.75em;
+    }
+
+    #feature-top article p, #feature-top article ul > li{
+        font-size: 1em;
+    }
+
+    header {
+        padding: 1em 7em 0;
+    }
+}
+
+@media screen and (min-width: 1500px){
+
+    #feature-top article {
+        margin-top: .55em;
+    }
+
+    #feature-top article p, #feature-top article ul > li{
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 1750px){
+
+    #feature-top article {
+        margin-top: 1.5em;
+    }
+
+    #feature-top article p, #feature-top article ul > li{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1950px){
+
+    #feature-top article {
+        margin-top: 3em;
+    }
+
+}

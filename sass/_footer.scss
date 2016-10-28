@@ -1,0 +1,71 @@
+
+/*  FOOTER
+*===========================*
+*/
+
+footer {
+    text-align: center;
+    font-family: 'quicksandregular', Arial, Helvetica, sans-serif;
+}
+
+footer span, footer span a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#aux-content img{
+    width: 35px;
+    margin: .5em .5em 0 0;
+}
+
+#address-wrapper span,
+#aux-content span{
+    display: block;
+    padding: .2em 0;
+}
+
+@media screen and (min-width: 1000px){
+    #address-wrapper, #number-wrapper{
+        float: left;
+        text-align: left;
+    }
+
+    #number-wrapper {
+        margin-left: 7px;
+    }
+
+    #aux-content {
+        clear: right;
+        float: right;
+        margin-top: -1.2em;
+        text-align: right;
+    }
+
+    #address-wrapper span,
+    #number-wrapper span,
+    #aux-content span{
+        display: inline;
+        font-size: .8em;
+    }
+
+    #aux-content span {
+        margin-right: 1em;
+        position: relative;
+        top: -30px;
+    }
+
+    #city-zip:after {
+        content: "| ";
+        padding-left: 7px;
+    }
+
+    #street-address:after{
+        content:", "
+    }
+}
+
+@media screen and (min-width: 1400px){
+    footer {
+        padding: 1.5em 7em;
+    }
+}
