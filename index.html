@@ -41,32 +41,19 @@
 <section id="feature-top">
     <div class="wrapper">
         <div class="feature-image-container">
-        	<img src="images/HH-building-shot.jpg" alt="Highland House" />
+        	<img src="images/swift-exterior.jpg" alt="The Swift Petworth Exterior" />
      	</div>
         <article>
-            <h1>Luxury Apartments in the Heart of Chevy Chase, MD</h1>
-            <h2>Spacious, Convenient Apartments with Modern Conveniences</h2>
-            <p> Our beautifully designed community offers the finest amenities, including: </p>
-            <ul>
-                <li>All Utilities Included</li>
-                <li>Oversized Apartments with Private Balconies</li>
-                <li>Gourmet Kitchens with Granite Countertops</li>
-                <li>Underground Parking</li>
-                <li>2 Blocks from  Metro Red Line – Friendship Heights Metro Station - Walk Score 91</li>
-            </ul>
-            <p>Highland House is an apartment community with luxury apartments and outstanding resident services. We take pride in the details; with high ceilings and sophisticated appointments, you’ll love the contemporary look and modern conveniences of our apartments. We not only give you an excellent location for any lifestyle, we also offer community amenities engineered to entertain, excite, and please residents. Come take a personal tour around our community to experience our friendly, professional staff and see firsthand how we strive to give our residents a superior living environment.</p>
-            <div class="logo-wrapper">
-                <img id="logo-apartment-ratings" src="images/logo-apartment-ratings.png" alt="Apartment Ratings logo"/>
-                <img id="logo-satisfacts" src="images/logo-satisfacts.png" alt="Satisfacts logo"/>
-            </div>
+            <h1>You've Been Matched!</h1>
+            <p>The Swift has the right apartment for your lifestyle. You will get the most out of living in the city. Besides having stylish apartments and amenities, from the downstairs Safeway to a fitness center to a rooftop terrace with a fire pit, you get panoramic views of the Washington Monument and National Cathedral—and easy access to all of DC, because you’re right at the Georgia Ave-Petworth Metro.</p>
+            <p>In fact, the only thing that could make The Swift any better is you.</p>
         </article>
     </div>
 </section>
 <!--feature-top-->
 
 <section id="form">
-    <h2 class="fancy"><span id="request-header">Request more Information</span><span class="disclaimer"> Contact our leasing specialist for current specials and availability</span></h2>
-
+    <h2 class="fancy"><span id="request-header">Let's Get To Know One Another</span></h2>
     <form id="tour-form" method="post" action="thank-you.php">
         <div id="first-name-wrapper">
             <label for="first-name">First Name</label>
@@ -85,25 +72,22 @@
         <label for="spam" class="honey">What is two plus two?</label>
         <input name="spam" type="text" size="4" id="spam" maxlength="4" class="honey">
         <div class="error-box"></div>
-        <input id="submit-request" name="submit-request" type="submit"  value="Contact Us">
+        <input id="submit-request" name="submit-request" type="submit"  value="yes, i want to save $1740*">
     </form>
 </section>
 <!--form-->
 
 <section id="property-features">
-    <h2 class="fancy"><span id="features-header">Community Features</span> </h2>
+    <h2 class="fancy"><span id="features-header">you have personality, so does the swift</span> </h2>
     <article id="community-features">
-        <h3>Apartment Amenities</h3>
+        <h3>inside your apartment</h3>
         <ul>
-            <li>Studio, Efficiency, 1 and 2  Bedroom Apartments</li>
-            <li>9 Foot Ceilings</li>
-            <li>Gourmet Kitchens with Granite Countertops and Dishwashers*</li>
-            <li>Plush Wall-to-Wall Carpeting</li>
-            <li>Oversized Walk-In Closets</li>
-            <li>Balconies in Every Apartment</li>
-            <li>Short term & Furnished apartments available</li>
+            <li>Sleek, CleanSteel<sup>&trade;</sup> appliances</li>
+            <li>Full-sized ENERGY STAR<sup>&reg;</sup> washer and dryer in every apartment</li>
+            <li>Sound-reducing, double-paned, energy-efficient windows with panoramic views of downtown DC</li>
+            <li>Sustainable quartz countertops and cabinets in kitchens and bathrooms</li>
         </ul>
-        <h3>Community Amenities</h3>
+        <h3>outside your apartment</h3>
         <ul>
             <li>All Utilities Included</li>
             <li>Walk score 91. Minutes from the Friendship Heights Red Line Metro.(<strong>Red Line Goes Direct to NIH</strong>/<strong>Walter Reed</strong>) Very Convenient Neighborhood-No Car Needed.</li>
@@ -112,19 +96,14 @@
             <li>Landscaped Courtyard with Gazebo</li>
             <li>Fitness Center with 24-hr Access</li>
             <li>24-hr Front Desk Concierge</li>
-            <li>Controlled Access</li>
-            <li>24-hr On-Site Emergency Maintenance</li>
-            <li>Furnished apartments and short term leases are available</li>
-            <li>Doctors’ Offices On-Site</li>
-            <li>Walk Score: 91</li>
-            <li>Specialty Shops</li>
-            <li>Fine Dining</li>
-            <li>Clothing Care Centers</li>
-            <li>Laundry Facilities on Each Floor</li>
-            <li>Valet Dry Cleaning</li>
-            <li>Package Receiving Center</li>
-            <li>Faxing & Copying Services</li>
-            <li>Courtesy Continental Breakfast Monthly</li>
+            <!-- start here -->
+
+            Rooftop terrace, outdoor pool table, two grilling stations, fire pit and 270-degree views of DC
+            • 24-hour, on-site concierge service
+            • Underground, resident-controlled parking garage with bike racks
+            • Pet-friendly community, no weight limits*
+            • Fully-equipped gym, landscape courtyard, and clubroom
+            • Clubroom with demo kitchen, fireplace, pool table, Wi-Fi, foosball table, seating areas and panoramic views of the Washington Monument, National Cathedral and Rosslyn
         </ul>
         <span class="disclaimer">* select apartments</span> </article>
     <article id="photo-grid">
@@ -166,7 +145,7 @@
 <script src="js/validate.min.js"></script>
 <script src="js/imagesloaded.pkgd.min.js"></script>
 <script src="js/jquery-imagefill.js"></script>
-<script>
+<!-- <script>
 	$(function() {
 		$( "#accordion" ).accordion({
 			heightStyle: "content",
@@ -176,7 +155,7 @@
 			active: false
 		});
 	});
-</script>
+</script> -->
 <script>
 var validator = new FormValidator('tour-form', [{
 	/*name: 'first-name',

@@ -1,6 +1,4 @@
-/*  DOCUMENT STYLES
-*===========================*
-*/
+/*  DOCUMENT STYLES  */
 
 p {
     padding-bottom: .75em;
@@ -8,7 +6,7 @@ p {
 }
 
 h1{
-    color: $color-green;
+    color: $brand-color-1;
     font-family: $font-bold, Arial, Helvetica, sans-serif;
     font-size: 1.75em;
     margin-bottom: 10px;
@@ -29,17 +27,6 @@ h2 span{
     line-height: 1.2em;
 }
 
-#feature-top h1{
-    margin-bottom: .5em;
-}
-
-#feature-top h2{
-    font-family: $font-regular, Times, serif;
-    color: $color-green;
-    text-align: left;
-    text-transform: none;
-}
-
 h3 {
     font-size: 1.3em;
     font-family: $font-regular, Times, serif;
@@ -47,7 +34,7 @@ h3 {
     text-transform: uppercase;
 }
 
-
+//  Sections Headers w/ lines
 @media screen and (min-width: 600px){
     .fancy {
       line-height: 0.5;
@@ -70,7 +57,7 @@ h3 {
       content: "";
       position: absolute;
       height: 5px;
-      border-top: 1px solid #68000b;
+      border-top: 1px solid $brand-color-2;
       top: 12px;
       width: 30px;
     }
@@ -108,11 +95,6 @@ h3 {
 
 
 @media screen and (min-width: 700px){
-    /*.fancy span:before,
-    .fancy span:after {
-      width: 100px;
-    }*/
-
     .fancy span#request-header:before,
     .fancy span#request-header:after{
         width: 120px;

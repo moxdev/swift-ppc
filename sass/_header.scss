@@ -20,7 +20,7 @@
 /* HEADER */
 
 header {
-    background-color: #fff;
+    background-color: $brand-color-3;
     text-align: center;
     padding: 1em .5em;
 }
@@ -31,7 +31,7 @@ header {
 }
 
 header article span {
-    color: #231f20;
+    color: $main-text-color;
     font-family: $font-bold, Arial, Helvetica, sans-serif;
     font-size: 1em;
     text-transform: uppercase;
@@ -40,7 +40,7 @@ header article span {
 header article span a,
 header article span a:hover,
 header article span a:visited {
-    color: $color-green;
+    color: $brand-color-1;
     font-family: $font-bold, Arial, Helvetica, sans-serif;
     font-size: 1em;
     text-decoration: none;

@@ -1,14 +1,14 @@
 
 #property-features {
-    background: #D5CBB0;
+    background: $brand-color-3;
     line-height: 0;
-    font-family: Verdana,Arial,sans-serif;
+    font-family: $font-light, Verdana,Arial,sans-serif;
     font-size: 14px;
 }
 
 #property-features h2 {
     color: #fff;
-    background: #68000b;
+    background: $brand-color-2;
     padding: 1.75em 0px;
     margin-bottom: 0;
 }
@@ -20,23 +20,23 @@
 
 #community-features {
     padding: 1em 1em 0;
-    color: #231f20;
+    color: $main-text-color;
     line-height: 1.3;
 }
 
 #community-features > h3 {
-    color: #231f20;
+    color: $brand-color-1;
 }
 
 #community-features > ul{
-    color: #231f20;
+    color: $main-text-color;
     margin-left: 1em;
     margin-bottom: 2em;
 }
 
 #community-features > ul li{
-    font-family: "caudexregular", Times, serif;
-    list-style: outside disc;
+    font-family: $font-light, Times, serif;
+    list-style: disc;
 
 }
 
