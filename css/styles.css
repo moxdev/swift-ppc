@@ -100,12 +100,17 @@ em {
 
 /*  DOCUMENT STYLES  */
 /* line 3, ../sass/_document.scss */
+body {
+  overflow-x: hidden;
+}
+
+/* line 7, ../sass/_document.scss */
 p {
   padding-bottom: .75em;
   line-height: 1.5em;
 }
 
-/* line 8, ../sass/_document.scss */
+/* line 12, ../sass/_document.scss */
 h1 {
   color: #c5e86c;
   font-family: "Montserrat-Bold", Arial, Helvetica, sans-serif;
@@ -113,7 +118,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-/* line 15, ../sass/_document.scss */
+/* line 19, ../sass/_document.scss */
 h2 {
   font-family: "Montserrat-Bold", Arial, Helvetica, sans-serif;
   font-size: 1.5em;
@@ -125,12 +130,12 @@ h2 {
   font-weight: 100;
 }
 
-/* line 26, ../sass/_document.scss */
+/* line 30, ../sass/_document.scss */
 h2 span {
   line-height: 1.2em;
 }
 
-/* line 30, ../sass/_document.scss */
+/* line 34, ../sass/_document.scss */
 h3 {
   font-size: 1.3em;
   font-family: "Montserrat-Regular", Times, serif;
@@ -139,13 +144,13 @@ h3 {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 39, ../sass/_document.scss */
+  /* line 43, ../sass/_document.scss */
   .fancy {
     line-height: 0.5;
     text-align: center;
   }
 
-  /* line 44, ../sass/_document.scss */
+  /* line 48, ../sass/_document.scss */
   .fancy span#request-header,
   .fancy span#floorplans-header,
   .fancy span#features-header {
@@ -153,7 +158,7 @@ h3 {
     position: relative;
   }
 
-  /* line 51, ../sass/_document.scss */
+  /* line 55, ../sass/_document.scss */
   .fancy span#request-header:before,
   .fancy span#request-header:after,
   .fancy span#floorplans-header:before,
@@ -168,7 +173,7 @@ h3 {
     width: 30px;
   }
 
-  /* line 65, ../sass/_document.scss */
+  /* line 69, ../sass/_document.scss */
   .fancy span#request-header:before,
   .fancy span#floorplans-header:before,
   .fancy span#features-header:before {
@@ -176,7 +181,7 @@ h3 {
     margin-right: 15px;
   }
 
-  /* line 72, ../sass/_document.scss */
+  /* line 76, ../sass/_document.scss */
   .fancy span#request-header:after,
   .fancy span#floorplans-header:after,
   .fancy span#features-header:after {
@@ -184,38 +189,38 @@ h3 {
     margin-left: 15px;
   }
 
-  /* line 79, ../sass/_document.scss */
+  /* line 83, ../sass/_document.scss */
   .fancy span#request-header:before,
   .fancy span#request-header:after {
     width: 60px;
   }
 
-  /* line 84, ../sass/_document.scss */
+  /* line 88, ../sass/_document.scss */
   .fancy span#floorplans-header:before,
   .fancy span#floorplans-header:after {
     width: 35px;
   }
 
-  /* line 89, ../sass/_document.scss */
+  /* line 93, ../sass/_document.scss */
   .fancy span#features-header:before,
   .fancy span#features-header:after {
     width: 125px;
   }
 }
 @media screen and (min-width: 700px) {
-  /* line 98, ../sass/_document.scss */
+  /* line 102, ../sass/_document.scss */
   .fancy span#request-header:before,
   .fancy span#request-header:after {
     width: 120px;
   }
 
-  /* line 103, ../sass/_document.scss */
+  /* line 107, ../sass/_document.scss */
   .fancy span#floorplans-header:before,
   .fancy span#floorplans-header:after {
     width: 105px;
   }
 
-  /* line 108, ../sass/_document.scss */
+  /* line 112, ../sass/_document.scss */
   .fancy span#features-header:before,
   .fancy span#features-header:after {
     width: 185px;
@@ -226,19 +231,19 @@ h3 {
   .fancy span:after {
     width: 200px;
   }*/
-  /* line 121, ../sass/_document.scss */
+  /* line 125, ../sass/_document.scss */
   .fancy span#request-header:before,
   .fancy span#request-header:after {
     width: 220px;
   }
 
-  /* line 126, ../sass/_document.scss */
+  /* line 130, ../sass/_document.scss */
   .fancy span#floorplans-header:before,
   .fancy span#floorplans-header:after {
     width: 205px;
   }
 
-  /* line 131, ../sass/_document.scss */
+  /* line 135, ../sass/_document.scss */
   .fancy span#features-header:before,
   .fancy span#features-header:after {
     width: 275px;
@@ -249,31 +254,31 @@ h3 {
   .fancy span:after {
     width: 368px;
   }*/
-  /* line 145, ../sass/_document.scss */
+  /* line 149, ../sass/_document.scss */
   .fancy span#request-header:before,
   .fancy span#request-header:after {
     width: 400px;
   }
 
-  /* line 150, ../sass/_document.scss */
+  /* line 154, ../sass/_document.scss */
   .fancy span#floorplans-header:before,
   .fancy span#floorplans-header:after {
     width: 375px;
   }
 
-  /* line 155, ../sass/_document.scss */
+  /* line 159, ../sass/_document.scss */
   .fancy span#features-header:before,
   .fancy span#features-header:after {
     width: 465px;
   }
 }
 @media screen and (min-width: 1575px) {
-  /* line 164, ../sass/_document.scss */
+  /* line 168, ../sass/_document.scss */
   h1 {
     font-size: 2.5em;
   }
 
-  /* line 168, ../sass/_document.scss */
+  /* line 172, ../sass/_document.scss */
   h2 {
     font-size: 1.75em;
   }
@@ -282,19 +287,19 @@ h3 {
   .fancy span:after {
     width: 500px;
   }*/
-  /* line 177, ../sass/_document.scss */
+  /* line 181, ../sass/_document.scss */
   .fancy span#request-header:before,
   .fancy span#request-header:after {
     width: 543px;
   }
 
-  /* line 182, ../sass/_document.scss */
+  /* line 186, ../sass/_document.scss */
   .fancy span#floorplans-header:before,
   .fancy span#floorplans-header:after {
     width: 507px;
   }
 
-  /* line 187, ../sass/_document.scss */
+  /* line 191, ../sass/_document.scss */
   .fancy span#features-header:before,
   .fancy span#features-header:after {
     width: 615px;
@@ -305,19 +310,19 @@ h3 {
   .fancy span:after {
     width: 650px;
   }*/
-  /* line 200, ../sass/_document.scss */
+  /* line 204, ../sass/_document.scss */
   .fancy span#request-header:before,
   .fancy span#request-header:after {
     width: 693px;
   }
 
-  /* line 205, ../sass/_document.scss */
+  /* line 209, ../sass/_document.scss */
   .fancy span#floorplans-header:before,
   .fancy span#floorplans-header:after {
     width: 657px;
   }
 
-  /* line 210, ../sass/_document.scss */
+  /* line 214, ../sass/_document.scss */
   .fancy span#features-header:before,
   .fancy span#features-header:after {
     width: 766px;
@@ -328,19 +333,19 @@ h3 {
   .fancy span:after {
     width: 800px;
   }*/
-  /* line 223, ../sass/_document.scss */
+  /* line 227, ../sass/_document.scss */
   .fancy span#request-header:before,
   .fancy span#request-header:after {
     width: 843px;
   }
 
-  /* line 228, ../sass/_document.scss */
+  /* line 232, ../sass/_document.scss */
   .fancy span#floorplans-header:before,
   .fancy span#floorplans-header:after {
     width: 807px;
   }
 
-  /* line 233, ../sass/_document.scss */
+  /* line 237, ../sass/_document.scss */
   .fancy span#features-header:before,
   .fancy span#features-header:after {
     width: 923px;
@@ -686,81 +691,78 @@ input[class="submit"] {
 }
 /* line 19, ../sass/_property-features.scss */
 #property-features #community-features {
-  padding: 1em 1em 0;
+  padding: 1em 3em 0;
   color: #333333;
-  line-height: 1.3;
+  line-height: 1.5;
 }
-
-/* line 29, ../sass/_property-features.scss */
-#community-features > h3 {
+/* line 24, ../sass/_property-features.scss */
+#property-features #community-features h3 {
   color: #c5e86c;
+  font-family: "Montserrat-Bold";
 }
-
-/* line 33, ../sass/_property-features.scss */
-#community-features > ul {
+/* line 29, ../sass/_property-features.scss */
+#property-features #community-features ul {
   color: #333333;
   margin-left: 1em;
   margin-bottom: 2em;
 }
-
-/* line 39, ../sass/_property-features.scss */
-#community-features > ul li {
+/* line 34, ../sass/_property-features.scss */
+#property-features #community-features ul li {
   font-family: "Montserrat-Light", Verdana, Arial, sans-serif;
   list-style: disc;
 }
-
-/* line 45, ../sass/_property-features.scss */
-#photo-grid {
+/* line 41, ../sass/_property-features.scss */
+#property-features #photo-grid {
   text-align: center;
   background: #fff;
 }
-/* line 49, ../sass/_property-features.scss */
-#photo-grid li {
+/* line 45, ../sass/_property-features.scss */
+#property-features #photo-grid li {
   margin: .3em 0 0;
   overflow: hidden;
 }
-
-/* line 55, ../sass/_property-features.scss */
-#grid-img-3 {
+/* line 50, ../sass/_property-features.scss */
+#property-features #photo-grid #grid-img-3 {
   clear: both;
   width: 100%;
   text-align: center;
   background-color: #EDEDED;
 }
-/* line 61, ../sass/_property-features.scss */
-#grid-img-3 img {
+/* line 56, ../sass/_property-features.scss */
+#property-features #photo-grid #grid-img-3 img {
   width: 75%;
+  padding: 30px 0;
 }
 
 @media screen and (min-width: 200px) {
-  /* line 68, ../sass/_property-features.scss */
+  /* line 66, ../sass/_property-features.scss */
   #grid-img-1, #grid-img-2 {
     float: none;
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 74, ../sass/_property-features.scss */
+  /* line 72, ../sass/_property-features.scss */
   #community-features {
     float: left;
     width: 45%;
     font-size: 1.1em;
   }
 
-  /* line 80, ../sass/_property-features.scss */
+  /* line 78, ../sass/_property-features.scss */
   #photo-grid {
     float: right;
     width: 52.5%;
     text-align: left;
   }
 
-  /* line 86, ../sass/_property-features.scss */
+  /* line 84, ../sass/_property-features.scss */
   #grid-img-1 {
     float: left;
     margin: 0 .3em;
     width: 49.5%;
   }
 
-  /* line 93, ../sass/_property-features.scss */
+  /* line 91, ../sass/_property-features.scss */
   #grid-img-2 {
     float: right;
     margin: 0 .3em;
@@ -768,35 +770,35 @@ input[class="submit"] {
   }
 }
 @media screen and (min-width: 1350px) {
-  /* line 102, ../sass/_property-features.scss */
+  /* line 100, ../sass/_property-features.scss */
   #photo-grid {
     width: 51.5%;
   }
 
-  /* line 106, ../sass/_property-features.scss */
+  /* line 104, ../sass/_property-features.scss */
   #community-features > h3 {
     font-size: 1.6em;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 112, ../sass/_property-features.scss */
+  /* line 110, ../sass/_property-features.scss */
   #community-features li {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1750px) {
-  /* line 118, ../sass/_property-features.scss */
+  /* line 116, ../sass/_property-features.scss */
   #community-features li {
     font-size: 1.3em;
   }
 }
 @media screen and (min-width: 2000px) {
-  /* line 124, ../sass/_property-features.scss */
+  /* line 122, ../sass/_property-features.scss */
   #community-features li {
     font-size: 1.5em;
   }
 
-  /* line 128, ../sass/_property-features.scss */
+  /* line 126, ../sass/_property-features.scss */
   #grid-img-3 img {
     width: 50%;
   }
