@@ -7,10 +7,15 @@
 #form h2{
     color: $form-color;
 }
+
+input {
+    border: none;
+}
 input, textarea{
     width: 100%;
     font-size: 1em;
     padding: 0.1em 0;
+    border: none;
 }
 
 label{

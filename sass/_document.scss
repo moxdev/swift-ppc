@@ -38,6 +38,17 @@ h3 {
     text-transform: uppercase;
 }
 
+/*  CLEARS  */
+
+.flex-header:after, .wrapper:after, #tour-form:after, #form:after, #property-features:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height:0;
+}
+
 //  Sections Headers w/ lines
 @media screen and (min-width: 600px){
     .fancy {
