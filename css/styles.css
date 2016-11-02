@@ -358,8 +358,8 @@ h3 {
       text-align: left; }
     /* line 54, ../sass/_header.scss */
     .flex-header #callout {
-      align-self: flex-end;
-      text-align: right; }
+      text-align: right;
+      align-self: flex-end; }
     /* line 58, ../sass/_header.scss */
     .flex-header #social {
       margin-top: 2em; } }
@@ -381,94 +381,60 @@ h3 {
   src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.otf") format("opentype"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
   font-weight: normal;
   font-style: normal; }
+/* feature-top.scss  */
 /* line 3, ../sass/_feature-top.scss */
-#feature-top h1 {
-  margin-bottom: .5em; }
-
-/* line 7, ../sass/_feature-top.scss */
-#feature-top h2 {
-  font-family: "Montserrat-Light", Times, serif;
-  color: #c5e86c;
-  text-align: left;
-  text-transform: none; }
-
-/* line 14, ../sass/_feature-top.scss */
 #feature-top {
   background: #000000; }
-
-/* line 18, ../sass/_feature-top.scss */
-#feature-top article p, #feature-top article ul {
-  color: #ffffff;
-  font-family: "Montserrat-Light", Times, serif; }
-
-/* line 23, ../sass/_feature-top.scss */
-#feature-top article ul {
-  margin-left: 2.5em;
-  margin-bottom: 1em; }
-
-/* line 28, ../sass/_feature-top.scss */
-#feature-top article ul > li {
-  list-style: disc;
-  font-size: 1em;
-  line-height: 1.25em; }
-
-/* line 34, ../sass/_feature-top.scss */
-#feature-top article {
-  padding: 1.5em 1em 1.5em .5em; }
-
-/* line 38, ../sass/_feature-top.scss */
-#feature-top article img {
-  height: 60px;
-  margin: 10px 10px 0 0; }
-
-/* line 43, ../sass/_feature-top.scss */
-.feature-image-container img {
-  max-width: none; }
-
-/* line 47, ../sass/_feature-top.scss */
-.feature-image-container {
-  height: 350px; }
-
-/* line 51, ../sass/_feature-top.scss */
-#feature-top .logo-wrapper {
-  text-align: center; }
-
-@media screen and (min-width: 1000px) {
-  /* line 56, ../sass/_feature-top.scss */
-  .feature-image-container {
-    width: 48.5%;
-    float: left; }
-
-  /* line 61, ../sass/_feature-top.scss */
+  /* line 5, ../sass/_feature-top.scss */
+  #feature-top .feature-image-container {
+    height: 375px; }
+    /* line 8, ../sass/_feature-top.scss */
+    #feature-top .feature-image-container img {
+      max-width: none; }
+  /* line 13, ../sass/_feature-top.scss */
   #feature-top article {
-    float: right;
-    width: 51.5%;
-    padding-left: 3em;
-    padding-right: 3em; } }
-@media screen and (min-width: 1400px) {
-  /* line 70, ../sass/_feature-top.scss */
-  header article span {
-    font-size: 1.75em; }
+    padding: 1em; }
+    /* line 16, ../sass/_feature-top.scss */
+    #feature-top article h1 {
+      text-align: center;
+      margin-bottom: .5em; }
+    /* line 21, ../sass/_feature-top.scss */
+    #feature-top article p {
+      color: #ffffff;
+      font-family: "Montserrat-Light", Times, serif; }
+  @media screen and (min-width: 750px) {
+    /* line 28, ../sass/_feature-top.scss */
+    #feature-top article {
+      padding: 2em; } }
+  @media screen and (min-width: 1000px) {
+    /* line 34, ../sass/_feature-top.scss */
+    #feature-top .feature-image-container {
+      width: 48.5%;
+      float: left; }
+    /* line 38, ../sass/_feature-top.scss */
+    #feature-top article {
+      float: right;
+      width: 51.5%;
+      padding: 2em 3em 0; }
+      /* line 43, ../sass/_feature-top.scss */
+      #feature-top article h1 {
+        font-size: 2em;
+        text-align: left; } }
+  @media screen and (min-width: 1400px) {
+    /* line 52, ../sass/_feature-top.scss */
+    #feature-top article h1 {
+      font-size: 2.5em; }
+    /* line 55, ../sass/_feature-top.scss */
+    #feature-top article p {
+      font-size: 1.2em; } }
+  @media screen and (min-width: 1750px) {
+    /* line 63, ../sass/_feature-top.scss */
+    #feature-top article h1 {
+      font-size: 2.8em; }
+    /* line 66, ../sass/_feature-top.scss */
+    #feature-top article p {
+      font-size: 1.4em; } }
 
-  /* line 74, ../sass/_feature-top.scss */
-  #feature-top article p, #feature-top article ul > li {
-    font-size: 1em; } }
-@media screen and (min-width: 1500px) {
-  /* line 85, ../sass/_feature-top.scss */
-  #feature-top article {
-    margin-top: .55em; }
-
-  /* line 89, ../sass/_feature-top.scss */
-  #feature-top article p, #feature-top article ul > li {
-    font-size: 1.1em; } }
-@media screen and (min-width: 1750px) {
-  /* line 96, ../sass/_feature-top.scss */
-  #feature-top article {
-    margin-top: 1.5em; }
-
-  /* line 100, ../sass/_feature-top.scss */
-  #feature-top article p, #feature-top article ul > li {
-    font-size: 1.2em; } }
 /* line 2, ../sass/_form.scss */
 #form {
   background-color: #c5e86c;
