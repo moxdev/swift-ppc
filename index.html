@@ -32,8 +32,10 @@
 <header>
     <div class="wrapper">
         <div id="logo-header"><img src="images/swift-logo.png" alt=""></div>
-        <article><span>Schedule your tour today<br/>
-            <a href="tel:2028035047" id="header-ph" class="googlenumber" onClick="ga('send', 'event', 'Telephone Call', 'Telephone Link', 'Telephone Link');">202.803.5047</a></span></article>
+        <article><span class="callout">Schedule your tour today<br/>
+            <a href="tel:2028035047" id="header-ph" class="googlenumber" onClick="ga('send', 'event', 'Telephone Call', 'Telephone Link', 'Telephone Link');">202.803.5047</a></span><div class="social"><img src="images/swift-facebook-80.png" alt=""><img src="images/swift-instagram-80.png" alt=""></div>
+        </article>
+
     </div>
 </header>
 <!--header-->
@@ -72,7 +74,9 @@
         <label for="spam" class="honey">What is two plus two?</label>
         <input name="spam" type="text" size="4" id="spam" maxlength="4" class="honey">
         <div class="error-box"></div>
-        <input id="submit-request" name="submit-request" type="submit"  value="yes, i want to save $1740*">
+        <div class="buttonHolder">
+            <input id="submit-request" name="submit-request" type="submit"  value="yes, i want to save $1740*">
+        </div>
     </form>
 </section>
 <!--form-->
@@ -128,12 +132,14 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbj6Rg5tTpunhvIqd4R47gEExvHNiwhAM&callback=MapCanvas"></script>
-<script src="js/google-maps/google-maps-cluster-library/google-maps-cluster-library.js"></script>
-<script src="js/google-maps/google-maps-marker-module.js"></script>
-<script src="js/google-maps/google-maps-options-module.js"></script>
-<script src="js/google-maps/google-maps-builder-library.js"></script>
-<script src="js/google-maps/google-maps-canvas-initializer.js"></script>
+<script src="js/map.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbj6Rg5tTpunhvIqd4R47gEExvHNiwhAM&callback=initMap"></script>
+<!-- <script src="js/google-maps/google-maps-cluster-library/google-maps-cluster-library.js"></script> -->
+<!-- <script src="js/google-maps/google-maps-marker-module.js"></script> -->
+<!-- <script src="js/google-maps/google-maps-options-module.js"></script> -->
+<!-- <script src="js/google-maps/google-maps-builder-library.js"></script> -->
+<!-- <script src="js/google-maps/google-maps-canvas-initializer.js"></script> -->
 
 <script src="js/validate.min.js"></script>
 <script src="js/imagesloaded.pkgd.min.js"></script>

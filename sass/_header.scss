@@ -46,6 +46,14 @@ header article span a:visited {
     text-decoration: none;
 }
 
+.social {
+
+    img {
+        margin: 5px;
+        width: 50px;
+    }
+}
+
 @media screen and (min-width: 500px){
     header article span {
         font-size: 1.25em;
@@ -72,6 +80,15 @@ header article span a:visited {
         float:right;
         margin-top: 1.25em;
         text-align: right;
+    }
+
+    .callout {
+        margin-right: 1em;
+    }
+    .social {
+        float: right;
+        clear: both;
+        // margin-left: 1em;
     }
 }
 
