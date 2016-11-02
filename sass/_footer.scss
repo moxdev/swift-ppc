@@ -1,37 +1,43 @@
-
-/*  FOOTER
-*===========================*
-*/
+/* footer.scss */
 
 footer {
     text-align: center;
-    font-family: 'quicksandregular', Arial, Helvetica, sans-serif;
-}
-
-footer span, footer span a{
+    font-family: $font-regular, Arial, Helvetica, sans-serif;
     color: #fff;
-    text-decoration: none;
-}
 
-#aux-content img{
-    width: 35px;
-    margin: .5em .5em 0 0;
-}
+    span a{
+        color: #fff;
+        text-decoration: none;
+    }
 
-#address-wrapper span,
-#aux-content span{
-    display: block;
-    padding: .2em 0;
+    #number-wrapper {
+        margin-top: 1em;
+
+        #footer-ph {
+            color: $brand-color-1;
+            font-family: $font-bold;
+            font-size: 2.5em;
+        }
+    }
+
+    #aux-content {
+
+        img{
+            width: 35px;
+            margin: .5em .5em 0 0;
+        }
+
+        span{
+            display: block;
+            padding: .2em 0;
+        }
+    }
 }
 
 @media screen and (min-width: 1000px){
     #address-wrapper, #number-wrapper{
         float: left;
         text-align: left;
-    }
-
-    #number-wrapper {
-        margin-left: 7px;
     }
 
     #aux-content {
@@ -53,19 +59,10 @@ footer span, footer span a{
         position: relative;
         top: -30px;
     }
-
-    #city-zip:after {
-        content: "| ";
-        padding-left: 7px;
-    }
-
-    #street-address:after{
-        content:", "
-    }
 }
 
 @media screen and (min-width: 1400px){
     footer {
-        padding: 1.5em 7em;
+        padding: 1.5em;
     }
 }

@@ -99,11 +99,6 @@ em {
 }
 
 /*  DOCUMENT STYLES  */
-/* line 3, ../sass/_document.scss */
-body {
-  overflow-x: hidden;
-}
-
 /* line 7, ../sass/_document.scss */
 p {
   padding-bottom: .75em;
@@ -438,19 +433,19 @@ header article span a:visited {
 */
 @font-face {
   font-family: 'Montserrat-Regular';
-  src: url("fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Montserrat-Regular.otf") format("opentype"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.otf") format("opentype"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Montserrat-Light';
-  src: url("fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Montserrat-Light.otf") format("opentype"), url("fonts/Montserrat-Light.woff") format("woff"), url("fonts/Montserrat-Light.ttf") format("truetype"), url("fonts/Montserrat-Light.svg#Montserrat-Light") format("svg");
+  src: url("../fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Light.otf") format("opentype"), url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.ttf") format("truetype"), url("../fonts/Montserrat-Light.svg#Montserrat-Light") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Montserrat-Bold';
-  src: url("fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Montserrat-Bold.otf") format("opentype"), url("fonts/Montserrat-Bold.woff") format("woff"), url("fonts/Montserrat-Bold.ttf") format("truetype"), url("fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.otf") format("opentype"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -804,68 +799,64 @@ input[class="submit"] {
   }
 }
 /* line 1, ../sass/_pre-footer.scss */
-#pre-footer #sub-content, footer {
-  padding: 1.5em 1em 1.5em .5em;
+#pre-footer {
+  width: 100%;
+  height: 100%;
+  padding: 0;
 }
-
-/* line 4, ../sass/_pre-footer.scss */
-#pre-footer .tel-link {
-  color: #000000;
-  text-decoration: none;
-}
-
-/* line 9, ../sass/_pre-footer.scss */
+/* line 6, ../sass/_pre-footer.scss */
 #pre-footer .wrapper {
   background: #FFFFFF;
+  position: relative;
 }
-
-/* line 13, ../sass/_pre-footer.scss */
-#map-canvas {
-  height: 300px;
+/* line 10, ../sass/_pre-footer.scss */
+#pre-footer .wrapper #map-canvas {
+  max-width: 100%;
+  height: 400px;
   position: relative;
 }
 
-/*  FOOTER
-*===========================*
-*/
-/* line 6, ../sass/_footer.scss */
+/* footer.scss */
+/* line 3, ../sass/_footer.scss */
 footer {
   text-align: center;
-  font-family: 'quicksandregular', Arial, Helvetica, sans-serif;
+  font-family: "Montserrat-Regular", Arial, Helvetica, sans-serif;
+  color: #fff;
 }
-
-/* line 11, ../sass/_footer.scss */
-footer span, footer span a {
+/* line 8, ../sass/_footer.scss */
+footer span a {
   color: #fff;
   text-decoration: none;
 }
-
+/* line 13, ../sass/_footer.scss */
+footer #number-wrapper {
+  margin-top: 1em;
+}
 /* line 16, ../sass/_footer.scss */
-#aux-content img {
+footer #number-wrapper #footer-ph {
+  color: #c5e86c;
+  font-family: "Montserrat-Bold";
+  font-size: 2.5em;
+}
+/* line 25, ../sass/_footer.scss */
+footer #aux-content img {
   width: 35px;
   margin: .5em .5em 0 0;
 }
-
-/* line 21, ../sass/_footer.scss */
-#address-wrapper span,
-#aux-content span {
+/* line 30, ../sass/_footer.scss */
+footer #aux-content span {
   display: block;
   padding: .2em 0;
 }
 
 @media screen and (min-width: 1000px) {
-  /* line 28, ../sass/_footer.scss */
+  /* line 38, ../sass/_footer.scss */
   #address-wrapper, #number-wrapper {
     float: left;
     text-align: left;
   }
 
-  /* line 33, ../sass/_footer.scss */
-  #number-wrapper {
-    margin-left: 7px;
-  }
-
-  /* line 37, ../sass/_footer.scss */
+  /* line 43, ../sass/_footer.scss */
   #aux-content {
     clear: right;
     float: right;
@@ -873,7 +864,7 @@ footer span, footer span a {
     text-align: right;
   }
 
-  /* line 44, ../sass/_footer.scss */
+  /* line 50, ../sass/_footer.scss */
   #address-wrapper span,
   #number-wrapper span,
   #aux-content span {
@@ -881,28 +872,17 @@ footer span, footer span a {
     font-size: .8em;
   }
 
-  /* line 51, ../sass/_footer.scss */
+  /* line 57, ../sass/_footer.scss */
   #aux-content span {
     margin-right: 1em;
     position: relative;
     top: -30px;
   }
-
-  /* line 57, ../sass/_footer.scss */
-  #city-zip:after {
-    content: "| ";
-    padding-left: 7px;
-  }
-
-  /* line 62, ../sass/_footer.scss */
-  #street-address:after {
-    content: ", ";
-  }
 }
 @media screen and (min-width: 1400px) {
-  /* line 68, ../sass/_footer.scss */
+  /* line 65, ../sass/_footer.scss */
   footer {
-    padding: 1.5em 7em;
+    padding: 1.5em;
   }
 }
 
