@@ -311,56 +311,48 @@ h3 {
 .flex-header {
   width: 100%;
   background-color: #ffffff;
-  padding: 1em .5em; }
-  /* line 7, ../sass/_header.scss */
+  padding: 1em .5em;
+  display: block;
+  text-align: center; }
+  /* line 9, ../sass/_header.scss */
   .flex-header #callout {
     color: #333333;
     font-family: "Montserrat-Bold", Arial, Helvetica, sans-serif;
-    text-transform: uppercase; }
-    /* line 11, ../sass/_header.scss */
+    text-transform: uppercase;
+    font-size: 1.25em;
+    margin: .5em auto; }
+    /* line 15, ../sass/_header.scss */
     .flex-header #callout a,
     .flex-header #callout a:hover,
     .flex-header #callout a:visited {
       color: #c5e86c;
       font-family: "Montserrat-Bold", Arial, Helvetica, sans-serif;
-      text-decoration: none; }
-  /* line 19, ../sass/_header.scss */
+      text-decoration: none;
+      font-size: 1.8em; }
+  /* line 24, ../sass/_header.scss */
   .flex-header #social {
     margin-left: 1em; }
-    /* line 21, ../sass/_header.scss */
+    /* line 26, ../sass/_header.scss */
     .flex-header #social img {
       width: 35px;
       margin: 0 5px; }
 
-@media screen and (min-width: 200px) {
-  /* line 30, ../sass/_header.scss */
-  .flex-header {
-    display: block;
-    text-align: center; }
-    /* line 33, ../sass/_header.scss */
-    .flex-header #callout {
-      font-size: 1.25em;
-      margin: .5em auto; }
-      /* line 36, ../sass/_header.scss */
-      .flex-header #callout a,
-      .flex-header #callout a:hover,
-      .flex-header #callout a:visited {
-        font-size: 1.8em; } }
 @media screen and (min-width: 750px) {
-  /* line 46, ../sass/_header.scss */
+  /* line 33, ../sass/_header.scss */
   .flex-header {
     display: flex;
     justify-content: space-around;
-    align-content: baseline; }
-    /* line 50, ../sass/_header.scss */
+    align-content: baseline;
+    padding: .5em 2em; }
+    /* line 38, ../sass/_header.scss */
     .flex-header #logo-header {
       flex: auto;
       text-align: left; }
-    /* line 54, ../sass/_header.scss */
+    /* line 42, ../sass/_header.scss */
     .flex-header #callout {
       text-align: right;
       align-self: flex-end; }
-    /* line 58, ../sass/_header.scss */
+    /* line 46, ../sass/_header.scss */
     .flex-header #social {
       margin-top: 3.1em; } }
 /*  FONTS
@@ -385,53 +377,64 @@ h3 {
 /* line 3, ../sass/_feature-top.scss */
 #feature-top {
   background: #000000; }
-  /* line 5, ../sass/_feature-top.scss */
-  #feature-top .feature-image-container {
-    height: 375px; }
-    /* line 8, ../sass/_feature-top.scss */
-    #feature-top .feature-image-container img {
-      max-width: none; }
-  /* line 13, ../sass/_feature-top.scss */
+  /* line 6, ../sass/_feature-top.scss */
+  #feature-top .feature-image-container img {
+    max-width: 100%;
+    display: block; }
+  /* line 11, ../sass/_feature-top.scss */
   #feature-top article {
     padding: 1em; }
-    /* line 16, ../sass/_feature-top.scss */
+    /* line 13, ../sass/_feature-top.scss */
     #feature-top article h1 {
       text-align: center;
       margin-bottom: .5em; }
-    /* line 21, ../sass/_feature-top.scss */
+    /* line 17, ../sass/_feature-top.scss */
     #feature-top article p {
       color: #ffffff;
       font-family: "Montserrat-Light", Times, serif; }
   @media screen and (min-width: 750px) {
-    /* line 28, ../sass/_feature-top.scss */
+    /* line 23, ../sass/_feature-top.scss */
     #feature-top article {
       padding: 2em; } }
   @media screen and (min-width: 1000px) {
-    /* line 34, ../sass/_feature-top.scss */
+    /* line 28, ../sass/_feature-top.scss */
     #feature-top .feature-image-container {
-      width: 48.5%;
+      width: 47%;
       float: left; }
-    /* line 38, ../sass/_feature-top.scss */
+    /* line 32, ../sass/_feature-top.scss */
     #feature-top article {
       float: right;
-      width: 51.5%;
-      padding: 2em 3em 0; }
-      /* line 43, ../sass/_feature-top.scss */
+      width: 53%;
+      padding: .5em .5em 0 1em; }
+      /* line 36, ../sass/_feature-top.scss */
       #feature-top article h1 {
         font-size: 2em;
         text-align: left; } }
+  @media screen and (min-width: 1200px) {
+    /* line 43, ../sass/_feature-top.scss */
+    #feature-top .feature-image-container {
+      width: 47%;
+      float: left; }
+    /* line 47, ../sass/_feature-top.scss */
+    #feature-top article {
+      float: right;
+      width: 53%;
+      padding: 2em; }
+      /* line 51, ../sass/_feature-top.scss */
+      #feature-top article p {
+        font-size: 1.1em; } }
   @media screen and (min-width: 1400px) {
-    /* line 52, ../sass/_feature-top.scss */
+    /* line 58, ../sass/_feature-top.scss */
     #feature-top article h1 {
       font-size: 2.5em; }
-    /* line 55, ../sass/_feature-top.scss */
+    /* line 61, ../sass/_feature-top.scss */
     #feature-top article p {
       font-size: 1.2em; } }
   @media screen and (min-width: 1750px) {
-    /* line 63, ../sass/_feature-top.scss */
+    /* line 68, ../sass/_feature-top.scss */
     #feature-top article h1 {
       font-size: 2.8em; }
-    /* line 66, ../sass/_feature-top.scss */
+    /* line 71, ../sass/_feature-top.scss */
     #feature-top article p {
       font-size: 1.4em; } }
 
