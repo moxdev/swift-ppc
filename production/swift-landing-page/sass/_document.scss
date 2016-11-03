@@ -1,0 +1,252 @@
+// document.scss
+
+body {
+    overflow-x: hidden;
+}
+
+p {
+    padding-bottom: .75em;
+    line-height: 1.5em;
+}
+
+h1{
+    color: $brand-color-1;
+    font-family: $font-bold, Arial, Helvetica, sans-serif;
+    font-size: 1.75em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: $font-bold, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: .75em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+h2 span{
+    line-height: 1.2em;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-family: $font-regular, Times, serif;
+    padding: .5em 0;
+    text-transform: uppercase;
+}
+
+/*  CLEARS  */
+
+.flex-header:after, .wrapper:after, #tour-form:after, #form:after, #property-features:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height:0;
+}
+
+//  Sections Headers w/ lines
+@media screen and (min-width: 600px){
+    .fancy {
+      line-height: 0.5;
+      text-align: center;
+    }
+
+    .fancy span#request-header,
+    .fancy span#floorplans-header,
+    .fancy span#features-header {
+      display: inline-block;
+      position: relative;
+    }
+
+    .fancy span#request-header:before,
+    .fancy span#request-header:after,
+    .fancy span#floorplans-header:before,
+    .fancy span#floorplans-header:after,
+    .fancy span#features-header:before,
+    .fancy span#features-header:after {
+      content: "";
+      position: absolute;
+      height: 5px;
+      border-top: 1px solid $brand-color-2;
+      top: 12px;
+      width: 30px;
+    }
+
+    .fancy span#request-header:before,
+    .fancy span#floorplans-header:before,
+    .fancy span#features-header:before  {
+      right: 100%;
+      margin-right: 15px;
+    }
+
+    .fancy span#request-header:after,
+    .fancy span#floorplans-header:after,
+    .fancy span#features-header:after {
+      left: 100%;
+      margin-left: 15px;
+    }
+
+    .fancy span#request-header:before,
+    .fancy span#request-header:after{
+        width: 60px;
+    }
+
+    .fancy span#floorplans-header:before,
+    .fancy span#floorplans-header:after{
+        width: 35px;
+    }
+
+    .fancy span#features-header:before,
+    .fancy span#features-header:after{
+        width: 125px;
+    }
+
+}
+
+
+@media screen and (min-width: 700px){
+    .fancy span#request-header:before,
+    .fancy span#request-header:after{
+        width: 120px;
+    }
+
+    .fancy span#floorplans-header:before,
+    .fancy span#floorplans-header:after{
+        width: 105px;
+    }
+
+    .fancy span#features-header:before,
+    .fancy span#features-header:after{
+        width: 185px;
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+    /*.fancy span:before,
+    .fancy span:after {
+      width: 200px;
+    }*/
+
+    .fancy span#request-header:before,
+    .fancy span#request-header:after{
+        width: 220px;
+    }
+
+    .fancy span#floorplans-header:before,
+    .fancy span#floorplans-header:after{
+        width: 205px;
+    }
+
+    .fancy span#features-header:before,
+    .fancy span#features-header:after{
+        width: 275px;
+    }
+
+}
+
+
+@media screen and (min-width: 1300px){
+    /*.fancy span:before,
+    .fancy span:after {
+      width: 368px;
+    }*/
+
+    .fancy span#request-header:before,
+    .fancy span#request-header:after{
+        width: 400px;
+    }
+
+    .fancy span#floorplans-header:before,
+    .fancy span#floorplans-header:after{
+        width: 375px;
+    }
+
+    .fancy span#features-header:before,
+    .fancy span#features-header:after{
+        width: 465px;
+    }
+
+}
+
+
+@media screen and (min-width: 1575px){
+    h1{
+        font-size: 2.5em;
+    }
+
+    h2{
+        font-size: 1.75em;
+    }
+
+    /*.fancy span:before,
+    .fancy span:after {
+      width: 500px;
+    }*/
+
+    .fancy span#request-header:before,
+    .fancy span#request-header:after{
+        width: 543px;
+    }
+
+    .fancy span#floorplans-header:before,
+    .fancy span#floorplans-header:after{
+        width: 507px;
+    }
+
+    .fancy span#features-header:before,
+    .fancy span#features-header:after{
+        width: 615px;
+    }
+}
+
+@media screen and (min-width: 1880px){
+
+    /*.fancy span:before,
+    .fancy span:after {
+      width: 650px;
+    }*/
+
+    .fancy span#request-header:before,
+    .fancy span#request-header:after{
+        width: 693px;
+    }
+
+    .fancy span#floorplans-header:before,
+    .fancy span#floorplans-header:after{
+        width: 657px;
+    }
+
+    .fancy span#features-header:before,
+    .fancy span#features-header:after{
+        width: 766px;
+    }
+}
+
+@media screen and (min-width: 2200px){
+
+    /*.fancy span:before,
+    .fancy span:after {
+      width: 800px;
+    }*/
+
+    .fancy span#request-header:before,
+    .fancy span#request-header:after{
+        width: 843px;
+    }
+
+    .fancy span#floorplans-header:before,
+    .fancy span#floorplans-header:after{
+        width: 807px;
+    }
+
+    .fancy span#features-header:before,
+    .fancy span#features-header:after{
+        width: 923px;
+    }
+}

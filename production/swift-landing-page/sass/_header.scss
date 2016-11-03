@@ -1,0 +1,51 @@
+//  header.scss
+
+.flex-header{
+    width: 100%;
+    background-color: $brand-color-3;
+    padding: 1em .5em;
+    display: block;
+    text-align: center;
+    #callout {
+        color: $main-text-color;
+        font-family: $font-bold, Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-size: 1.25em;
+        margin: .5em auto;
+        a,
+        a:hover,
+        a:visited {
+            color: $brand-color-1;
+            font-family: $font-bold, Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            font-size: 1.8em;
+        }
+    }
+    #social {
+        margin-left: 1em;
+        img {
+            width: 35px;
+            margin: 0 5px;
+        }
+    }
+}
+@media screen and (min-width: 750px){
+    .flex-header{
+        display: flex;
+        justify-content: space-around;
+        align-content: baseline;
+        padding: .5em 2em;
+        #logo-header {
+            flex: auto;
+            text-align: left;
+        }
+        #callout {
+            text-align: right;
+            align-self: flex-end;
+        }
+        #social {
+            margin-top: 3.1em;
+        }
+    }
+}
+

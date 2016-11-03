@@ -29,7 +29,7 @@ if (!empty($spa) && !($spa == "4" || $spa == "four")) {
 }
 
 if($_SERVER['REQUEST_METHOD']=="POST") {
-	$to="eron@mm4solutions.com, managementoffice@swiftpetworth.com";
+	$to="shane@mm4solutions.com";
 
 	$firstName=$_POST["first-name"];
 	$lastName=$_POST["last-name"];
@@ -49,7 +49,7 @@ if($_SERVER['REQUEST_METHOD']=="POST") {
 <meta charset="UTF-8">
 <title>Thank You | The Swift Petworth</title>
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0">
-<link href="css/styles.css" type="text/css" rel="stylesheet">
+<link href="swift-landing-page/css/styles.css" type="text/css" rel="stylesheet">
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -67,13 +67,13 @@ ga('send', 'pageview');
 <header>
     <div class="flex-header">
         <div id="logo-header">
-            <img src="images/swift-logo.png" alt="The Swift Petworth logo">
+            <img src="swift-landing-page/images/swift-logo.png" alt="The Swift Petworth logo">
         </div>
         <div id="callout">Schedule your tour today<br/>
             <a href="tel:2028035047">202.803.5047</a>
         </div>
         <div id="social">
-            <a href="https://www.facebook.com/TheSwiftApts/"><img src="images/swift-facebook-80.png" alt="link to Swift Petworth Facebook page"></a><a href="https://www.instagram.com/theswiftpetworthapts/"><img src="images/swift-instagram-80.png" alt="link to Swift Petworth instagram page"></a>
+            <a href="https://www.facebook.com/TheSwiftApts/"><img src="swift-landing-page/images/swift-facebook-80.png" alt="link to Swift Petworth Facebook page"></a><a href="https://www.instagram.com/theswiftpetworthapts/"><img src="swift-landing-page/images/swift-instagram-80.png" alt="link to Swift Petworth instagram page"></a>
         </div>
     </div>
 </header>
@@ -94,7 +94,7 @@ ga('send', 'pageview');
     <div class="wrapper">
         <article id="address-wrapper"> <span id="street-address">3828 Georgia Avenue, NW</span> <span id="city-zip">Washington, DC 20011</span></article><br>
         <article id="number-wrapper"> <span id="phone"><a href="tel:2028035047">202.803.5047</a></span></article>
-        <article id="aux-content"><img src="images/logo-eho.svg" alt="Equal Housing Oppurtunity logo"/> <img src="images/logo-handicap.svg" alt="International Symbol of Access (ISA) logo"/> </article>
+        <article id="aux-content"><img src="swift-landing-page/images/logo-eho.svg" alt="Equal Housing Oppurtunity logo"/> <img src="swift-landing-page/images/logo-handicap.svg" alt="International Symbol of Access (ISA) logo"/></article>
     </div>
 </footer>
 

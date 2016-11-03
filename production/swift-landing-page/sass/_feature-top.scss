@@ -1,0 +1,78 @@
+// feature-top.scss
+
+#feature-top {
+    background: $feature-top-background-color;
+    .feature-image-container {
+        img {
+            max-width: 100%;
+            display: block;
+        }
+    }
+    article {
+        padding: 1em;
+        h1{
+            text-align: center;
+            margin-bottom: .5em;
+        }
+        p {
+            color: $feature-top-color;
+            font-family: $font-light, Times, serif;
+        }
+    }
+    @media screen and (min-width: 750px){
+            article {
+                padding: 2em;
+            }
+    }
+    @media screen and (min-width: 1000px){
+        .feature-image-container {
+            width: 47%;
+            float: left;
+        }
+        article {
+            float: right;
+            width: 53%;
+            padding: .5em .5em 0 1em;
+            h1 {
+                font-size: 2em;
+                text-align: left;
+            }
+        }
+    }
+    @media screen and (min-width: 1200px){
+        .feature-image-container {
+            width: 47%;
+            float: left;
+        }
+        article {
+            float: right;
+            width: 53%;
+            padding: 2em;
+            p {
+                font-size: 1.1em;
+            }
+        }
+    }
+    @media screen and (min-width: 1400px){
+        article {
+            h1 {
+                font-size: 2.5em;
+            }
+            p {
+                font-size: 1.2em;
+            }
+        }
+    }
+    @media screen and (min-width: 1750px){
+        article {
+            h1 {
+                font-size: 2.8em;
+            }
+            p {
+                font-size: 1.4em;
+            }
+        }
+    }
+}
+
+

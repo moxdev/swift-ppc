@@ -1,0 +1,57 @@
+// footer.scss
+
+footer {
+    text-align: center;
+    font-family: $font-regular, Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 2em 1em;
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+    #number-wrapper a {
+        color: $brand-color-1;
+        font-family: $font-bold;
+        font-size: 1.5em;
+    }
+    #aux-content {
+        img{
+            width: 25px;
+            margin: .5em .5em .5em 0;
+        }
+    }
+    @media screen and (min-width: 1000px){
+        #address-wrapper {
+            float: left;
+            text-align: left;
+        }
+        #number-wrapper{
+            float: left;
+            text-align: left;
+            padding-top: 1em;
+            a {
+                font-size: 1.7em;
+            }
+        }
+        #aux-content {
+            clear: right;
+            float: right;
+            margin-top: -1.2em;
+            text-align: right;
+            img{
+                width: 35px;
+            }
+        }
+    }
+    @media screen and (min-width: 1400px){
+        #number-wrapper {
+            a {
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+
+
+

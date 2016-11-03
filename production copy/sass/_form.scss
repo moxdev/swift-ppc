@@ -1,0 +1,69 @@
+//  form.scss
+
+#form{
+    background-color: $form-background-color;
+    padding: 1.5em .5em;
+    h2{
+        color: $form-color;
+    }
+    input, textarea{
+        width: 100%;
+        font-size: 1em;
+        padding: 0.1em 0;
+        border: none;
+    }
+    #tour-form {
+        width: 80%;
+        margin: 0 auto;
+        label{
+            font-family: $font-regular, Arial, Helvetica, sans-serif;
+            display: block;
+            font-size: 0.9em;
+            padding: .5em 0;
+        }
+        input[type="submit"],
+        input[class="submit"]{
+            cursor: pointer;
+            width: auto;
+            padding: .5em 2.5em;
+            margin-top: 1.3em;
+            background-color: $form-button-background-color;
+            color: #fff;
+            border: none;
+            font-weight: bold;
+            text-transform:uppercase;
+            letter-spacing: 1px;
+            font-size: .9em;
+        }
+        .honey {
+            display: none;
+        }
+        .buttonHolder {
+            text-align: center;
+        }
+    }
+    @media screen and (min-width: 1000px){
+        #tour-form{
+            width: 1000px;
+            margin: 0 auto;
+            label {
+                clear:both;
+            }
+            input[id="first-name"], input[id="last-name"], input[id="email"]{
+                width: 300px;
+            }
+            #first-name-wrapper, #last-name-wrapper, #email-wrapper{
+                float: left;
+                margin-right: 30px;
+                width: 303px;
+            }
+            textarea[id="comments"]{
+                width: 96.5%;
+            }
+            input[type="submit"]{
+                position: relative;
+                cursor: pointer;
+            }
+        }
+    }
+}
