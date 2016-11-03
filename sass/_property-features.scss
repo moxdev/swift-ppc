@@ -37,20 +37,26 @@
     #photo-grid {
         text-align: center;
         background: #fff;
-        li {
-            margin: .3em 0 0;
-            overflow: hidden;
-        }
         #grid-img-1, #grid-img-2 {
             float: none;
+            margin: 0;
+            padding: 0;
         }
         #grid-img-3 {
-            clear: both;
             width: 100%;
             text-align: center;
             background-color: $floor-plan-background-color;
             img {
                 padding: 40px 0;
+            }
+        }
+        .floorplan {
+            background-color: $floor-plan-background-color;
+            font-family: $font-bold;
+            color: $main-text-color;
+            text-align: center;
+            .last {
+                padding-bottom: 2em;
             }
         }
     }
@@ -86,6 +92,9 @@
                 float: right;
                 margin: 0;
                 width: 49.5%;
+            }
+            #grid-img-3 {
+                clear: both;
             }
         }
     }
