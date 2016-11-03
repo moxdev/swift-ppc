@@ -622,12 +622,12 @@ h3 {
 #pre-footer {
   width: 100%;
   padding: 0; }
-  /* line 5, ../sass/_pre-footer.scss */
+  /* line 4, ../sass/_pre-footer.scss */
   #pre-footer .wrapper {
     width: 100%;
     background: #FFFFFF;
     position: relative; }
-    /* line 10, ../sass/_pre-footer.scss */
+    /* line 8, ../sass/_pre-footer.scss */
     #pre-footer .wrapper #map-canvas {
       max-width: 100%;
       height: 300px;
@@ -638,56 +638,46 @@ h3 {
 footer {
   text-align: center;
   font-family: "Montserrat-Regular", Arial, Helvetica, sans-serif;
-  color: #fff; }
+  color: #fff;
+  padding: 2em 1em; }
   /* line 8, ../sass/_footer.scss */
-  footer span a {
+  footer a {
     color: #fff;
     text-decoration: none; }
-  /* line 13, ../sass/_footer.scss */
-  footer #number-wrapper {
-    margin-top: 1em; }
-    /* line 16, ../sass/_footer.scss */
-    footer #number-wrapper #footer-ph {
-      color: #c5e86c;
-      font-family: "Montserrat-Bold";
-      font-size: 2.5em; }
-  /* line 25, ../sass/_footer.scss */
+  /* line 12, ../sass/_footer.scss */
+  footer #number-wrapper a {
+    color: #c5e86c;
+    font-family: "Montserrat-Bold";
+    font-size: 1.5em; }
+  /* line 18, ../sass/_footer.scss */
   footer #aux-content img {
-    width: 35px;
-    margin: .5em .5em 0 0; }
-  /* line 30, ../sass/_footer.scss */
-  footer #aux-content span {
-    display: block;
-    padding: .2em 0; }
-
-@media screen and (min-width: 1000px) {
-  /* line 38, ../sass/_footer.scss */
-  #address-wrapper, #number-wrapper {
-    float: left;
-    text-align: left; }
-
-  /* line 43, ../sass/_footer.scss */
-  #aux-content {
-    clear: right;
-    float: right;
-    margin-top: -1.2em;
-    text-align: right; }
-
-  /* line 50, ../sass/_footer.scss */
-  #address-wrapper span,
-  #number-wrapper span,
-  #aux-content span {
-    display: inline;
-    font-size: .8em; }
-
-  /* line 57, ../sass/_footer.scss */
-  #aux-content span {
-    margin-right: 1em;
-    position: relative;
-    top: -30px; } }
-@media screen and (min-width: 1400px) {
-  /* line 65, ../sass/_footer.scss */
-  footer {
-    padding: 1.5em; } }
+    width: 25px;
+    margin: .5em .5em .5em 0; }
+  @media screen and (min-width: 1000px) {
+    /* line 24, ../sass/_footer.scss */
+    footer #address-wrapper {
+      float: left;
+      text-align: left; }
+    /* line 28, ../sass/_footer.scss */
+    footer #number-wrapper {
+      float: left;
+      text-align: left;
+      padding-top: 1em; }
+      /* line 32, ../sass/_footer.scss */
+      footer #number-wrapper a {
+        font-size: 1.7em; }
+    /* line 36, ../sass/_footer.scss */
+    footer #aux-content {
+      clear: right;
+      float: right;
+      margin-top: -1.2em;
+      text-align: right; }
+      /* line 41, ../sass/_footer.scss */
+      footer #aux-content img {
+        width: 35px; } }
+  @media screen and (min-width: 1400px) {
+    /* line 48, ../sass/_footer.scss */
+    footer #number-wrapper a {
+      font-size: 2em; } }
 
 /*# sourceMappingURL=styles.css.map */

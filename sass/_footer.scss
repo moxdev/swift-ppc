@@ -4,65 +4,54 @@ footer {
     text-align: center;
     font-family: $font-regular, Arial, Helvetica, sans-serif;
     color: #fff;
-
-    span a{
+    padding: 2em 1em;
+    a{
         color: #fff;
         text-decoration: none;
     }
-
-    #number-wrapper {
-        margin-top: 1em;
-
-        #footer-ph {
-            color: $brand-color-1;
-            font-family: $font-bold;
-            font-size: 2.5em;
-        }
+    #number-wrapper a {
+        color: $brand-color-1;
+        font-family: $font-bold;
+        font-size: 1.5em;
     }
-
     #aux-content {
-
         img{
-            width: 35px;
-            margin: .5em .5em 0 0;
-        }
-
-        span{
-            display: block;
-            padding: .2em 0;
+            width: 25px;
+            margin: .5em .5em .5em 0;
         }
     }
-}
-
-@media screen and (min-width: 1000px){
-    #address-wrapper, #number-wrapper{
-        float: left;
-        text-align: left;
+    @media screen and (min-width: 1000px){
+        #address-wrapper {
+            float: left;
+            text-align: left;
+        }
+        #number-wrapper{
+            float: left;
+            text-align: left;
+            padding-top: 1em;
+            a {
+                font-size: 1.7em;
+            }
+        }
+        #aux-content {
+            clear: right;
+            float: right;
+            margin-top: -1.2em;
+            text-align: right;
+            img{
+                width: 35px;
+            }
+        }
     }
-
-    #aux-content {
-        clear: right;
-        float: right;
-        margin-top: -1.2em;
-        text-align: right;
-    }
-
-    #address-wrapper span,
-    #number-wrapper span,
-    #aux-content span{
-        display: inline;
-        font-size: .8em;
-    }
-
-    #aux-content span {
-        margin-right: 1em;
-        position: relative;
-        top: -30px;
-    }
-}
-
-@media screen and (min-width: 1400px){
-    footer {
-        padding: 1.5em;
+    @media screen and (min-width: 1400px){
+        #number-wrapper {
+            a {
+                font-size: 2em;
+            }
+        }
     }
 }
+
+
+
+
